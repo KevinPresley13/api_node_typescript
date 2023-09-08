@@ -5,7 +5,6 @@ const server = express();
 
 
 
-
 server.get("/ping", (req: Request, res: Response)=>{
     return res.send({resposta: "pong"});
 });
