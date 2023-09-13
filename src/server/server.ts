@@ -3,6 +3,8 @@ import router from "./routers";
 
 const server = express();
 
+server.use(express.urlencoded({extended:true}));
+server.use(express.json());//passando para o servidor que vai receber um JSON
 server.use(router);
 
 
