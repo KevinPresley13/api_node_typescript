@@ -1,7 +1,6 @@
 import { Request, Response } from "express";
 
 
-
 export const home = (req:Request, res:Response)=>{
-    res.send({connection: "true"});
+    res.json({connection: "true"});
 };

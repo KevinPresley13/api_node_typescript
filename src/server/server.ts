@@ -1,5 +1,5 @@
 import express, { Request, Response } from "express";
-import testeController from "../routers/index";
+import testeController from "./routers/index";
 
 const server = express();
 
