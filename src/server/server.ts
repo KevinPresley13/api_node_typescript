@@ -1,9 +1,11 @@
 import express, { Request, Response } from "express";
-import testeController from "./routers/index";
+import router from "./routers";
 
 const server = express();
 
-server.use(testeController);
+server.use(router);
+
+
 
 server.get("/ping", (req: Request, res: Response)=>{
     return res.send({resposta: "pong"});
