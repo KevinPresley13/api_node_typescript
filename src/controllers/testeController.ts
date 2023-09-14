@@ -6,6 +6,5 @@ export const teste = (req:Request, res:Response)=>{
 };
 
 export const testePost = (req:Request, res:Response)=>{
-    console.log(req.body);
-    res.json({});
+    res.json(req.body);
 };
