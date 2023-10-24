@@ -1,5 +1,6 @@
 import { Router } from "express";
 import * as rotasController from "../controllers/testeController";
+import { cidadesControler } from "./../controllers";
 
 
 const router = Router();
@@ -7,6 +8,6 @@ const router = Router();
 router.get("/teste",rotasController.teste);
 router.post("/testepost",rotasController.testePost);
 
-
+router.post("/newcit",cidadesControler.create);
 
 export default router;
