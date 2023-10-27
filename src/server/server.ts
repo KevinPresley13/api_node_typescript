@@ -1,5 +1,8 @@
 import express, { Request, Response } from "express";
+import "./shared/services/TranslationsYup";
+
 import router from "./routers";
+
 
 const server = express();
 
