@@ -8,6 +8,6 @@ const router = Router();
 router.get("/teste",rotasController.teste);
 router.post("/testepost",rotasController.testePost);
 
-router.post("/newcit",cidadesControler.create);
+router.post("/newcit", cidadesControler.creatBodyValidator, cidadesControler.create);
 
 export default router;
